@@ -1,6 +1,8 @@
 class Question {
-  Question(
-      {required String question,
-      required String imagePath,
-      required bool correctAnswer});
+  String question;
+  bool correctAnswer;
+
+  Question(this.question, this.correctAnswer);
+
+
 }
