@@ -25,16 +25,20 @@ class _HomePageState extends State<HomePage> {
             children: [
               Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 0.3,
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                ),
+                height: MediaQuery.of(context).size.height * 0.4,
               ),
               Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 0.5,
-                decoration: BoxDecoration(
-                  color: Colors.black,
+                height: MediaQuery.of(context).size.height * 0.4,
+                child: Center(
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 0.8,
+                    height: MediaQuery.of(context).size.height * 0.2,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(15.0),
+                    ),
+                  ),
                 ),
               ),
               Expanded(
@@ -42,8 +46,6 @@ class _HomePageState extends State<HomePage> {
                   alignment: FractionalOffset.bottomCenter,
                   child: Container(
                     alignment: FractionalOffset.center,
-                    width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height * 0.15,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
