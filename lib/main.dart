@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:questions_reponses/home.dart';
+import 'package:questions_reponses/provider/question_provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (context) => QuestionProvider(),
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
